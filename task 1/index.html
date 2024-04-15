@@ -1,0 +1,240 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="https://static.vecteezy.com/system/resources/previews/015/205/301/original/movie-camera-icon-simple-film-cinema-vector.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviebox</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/css" >
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+         header{
+             width: 100%;
+             height: 100vh;
+             background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+             url('https://img.freepik.com/free-photo/3d-render-movie-maker-3d-illustration-design_460848-9858.jpg');
+             background-size: cover;
+             font-family: sans-serif;
+         }
+         
+         nav{
+            width: 100%;
+            height: 100px;
+            
+            color:black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+         }
+         .logo{
+            color: white;
+            font-size: 5em;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+         }
+         .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+         }
+         .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+        
+            border-bottom: 2px solid bisque;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+         .signin a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: bisque ;
+            border-radius: 8px;
+            transition: 0.4s;
+         }
+         .signin a:hover{
+            background: transparent;
+            border: 1px solid bisque;
+            color: white;
+         }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 3.5em;
+
+        }
+        .h-txt a{
+            text-decoration: none;
+            background: bisque;
+            color: black;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+        .h-txt a:hover{
+            background: transparent;
+            border: 5px solid bisque;
+            color: white;
+        }
+        .footer{
+            background-color: bisque;
+            padding: 70px 0;
+        }
+        .container{
+            max-width: 1170px;
+            
+            margin:auto;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer-col{
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            font-family: sans-serif;
+            color: black;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight:500;
+            position:relative;
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left:0;
+            bottom:-10px;
+            background-color: indianred ;
+            height: 3px;
+            box-sizing: border-box;
+            width: 100px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform:capitalize;
+            color: maroon;
+            display: block;
+            transition: 0.4s ease;
+        }
+        .footer-col ul li a:hover{
+            color: darkgrey;
+            padding-left: 10px;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin-right: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color:maroon;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social-links a:hover{
+            color:bisque;
+            background-color: maroon;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+             Movie-Box
+        </div>
+        <div class="menu">
+            <a href="#">Movies</a> 
+            <a href="#">Stream</a>
+            <a href="#">Events</a>
+            <a href="#">Offers</a>
+            <a href="#">contact</a>
+        </div>
+         <div class="signin">
+            <a href="#">Sign In</a>
+         </div>
+        </nav>
+        <section class="h-txt">
+            
+            <span>Enjoy</span>
+            <h1>The blockbuster Cinema</h1>
+            <br>
+            <a href="#">Book your ticket</a>
+        </section>
+    </header>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">About  Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Cancel Ticket</a></li>
+                        <li><a href="#">Bookings</a></li>
+                        <li><a href="#">Payment Option</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Movies by Language</h4>
+                    <ul>
+                        <li><a href="#">Movies in Hindi</a></li>
+                        <li><a href="#">Movies in Telugu</a></li>
+                        <li><a href="#">Movies in Tamil</a></li>
+                        <li><a href="#">Movies in marathi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
